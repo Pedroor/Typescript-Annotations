@@ -24,3 +24,10 @@ function useState<S>(initialState?: S) {
 }
 
 const state = useState<number>(10);
+
+type Callback = (result: string) => void;
+
+function openConsole(callback: Callback) {}
+
+function callback(nome: string) {}
+openConsole(callback);
